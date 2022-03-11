@@ -1,0 +1,937 @@
+@charset "utf-8";
+
+/** 기본 설정
+--------------------------------------- */
+html, body {
+    width: 100%; height: 100%; padding: 0; margin: 0;
+    
+}
+
+.container {
+    overflow-x: hidden;
+}
+
+/** float 처리
+--------------------------------------- */
+.pull-left {float: left;}
+.pull-right {float: right;}
+.clearfix::after {content: ''; display: block; clear: both; float: none;}
+
+
+/** ALL
+--------------------------------------- */
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #1a1a1a;
+    line-height: 50%;
+    letter-spacing: -.05em;
+
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #cacaca;
+    line-height: 50%;
+    letter-spacing: -.05em;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Nanum Myeongjo', serif;
+    color: white;
+    letter-spacing: -.05em;
+}
+
+h4 {
+    font-size: 15px;
+    font-family: 'Montagu Slab', serif;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: -.05em;
+}
+
+li {
+    list-style: none;
+}
+
+.brunch_title {
+    padding-top: 152px;
+}
+
+.brunch_title span {
+    display: block;
+    text-align: center;
+
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 46px;
+    font-weight: bold;
+    color: #959595;
+    letter-spacing: -.05em;
+}
+
+span {
+    font-size: 12px;
+    color: white;
+    letter-spacing: -.05em;
+}
+
+.by {
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/** HEADER 1
+--------------------------------------- */
+#banner .banner_sub {
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+    display: block;
+    text-align: center;
+
+    background-image: url(/brunchClone/img/header1.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    position: relative;
+}
+
+#banner img {
+    position: absolute;
+    width: 960px;
+    top: 35%;
+    left: 50%;
+    margin: -240px 0 0 -480px;
+}
+
+
+/** HEADER 2
+--------------------------------------- */
+#header {
+    z-index: 99999px;
+}
+
+#header .header_menu {
+    padding: 30px 20px 0 20px;
+    background: rgba(255, 255, 255, 0.9);
+
+    width: 100%;
+}
+
+#header .header_menu .burger {
+    border: none;
+    background-color: transparent !important;
+    font-size: 28px;
+}
+
+#header .header_menu .logo {
+    display: inline-block;
+    background: url(/brunchClone/img/icon2.png) no-repeat;
+    width: 72px;
+    height: 22px;
+
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+#header .header_menu .start {
+    border: 1px solid #959595;
+    border-radius: 16px;
+    width: 64px;
+    height: 28px;
+    background-color: white;
+
+    font-size: 11px;
+    color: #959595;
+    text-align: center;
+}
+
+#header .header_menu .search {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+/** HEADER 2 > Side menu
+--------------------------------------- */
+#sidemenu {
+    width: 260px;
+    height: 100%;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    transition-duration: 0s;
+    transition-timing-function: ease-in;
+    text-align: center;
+    top: 0;
+    z-index: 99999;
+
+    position: fixed;
+    left: -270px;
+    transition: 0.5s ease;
+}
+
+#sidemenu .side_profile {
+    height: 239px;
+    background: #f8f8f8;
+    overflow: hidden;
+    position: relative;
+}
+
+#sidemenu .side_profile .ico_brunch {
+    overflow: hidden;
+    background: url(/brunchClone/img/icon2.png) no-repeat;
+}
+
+#sidemenu .side_profile .logo {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 40px auto 9px;
+    background-position: -1px -26px;
+}
+
+#sidemenu .side_profile .text {
+    display: block;
+    color: #666;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    line-height: 1.35;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#sidemenu .side_profile .writer {
+    display: block;
+    color: #959595;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    line-height: 1.35;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#sidemenu .side_profile .btn_request {
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid #00c3bd;
+    background-color: white;
+    color: #00c3bd;
+    font-size: 13px;
+    margin-top: 13px;
+}
+
+#sidemenu .service_menu {
+    border-top: 1px solid #ddd;
+    padding-top: 28px;
+    overflow-y: auto;
+    height: 381px;
+    font-size: 14px;
+    background-color: white;
+}
+
+#sidemenu .service_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#sidemenu .service_menu li {
+    margin: 0 auto;
+    height: 13px;
+    line-height: 13px;
+    padding: 12px 0;
+    width: 240px;
+}
+
+#sidemenu .service_menu .now {
+    margin: 0 auto;
+    height: 13px;
+    line-height: 13px;
+    padding: 12px 0;
+    width: 240px;
+}
+
+#sidemenu .service_menu .now a {
+    color: #00c3bd;
+}
+
+#sidemenu .service_menu .now span {
+    width: 35px;
+    display: inline-block;
+    border-bottom: 1px solid #00c3bd;
+    vertical-align: middle;
+}
+
+#sidemenu .service_menu .act_btn{
+    color: #333;
+}
+
+#sidemenu .service_menu .act_btn:hover span {
+    width: 28px;
+    display: inline-block;
+    border-bottom: 1px solid #00c3bd;
+    vertical-align: middle;
+}
+
+#sidemenu .service_menu .act_btn:hover{
+    color: #00c3bd;
+}
+
+#sidemenu .event_banner {
+    margin-top: 40px;
+    margin-bottom: 37px;
+}
+
+#sidemenu .event_banner .banner1 {
+    display: block;
+    width: 173px;
+    height: 33px;
+    margin: 0 auto 33px;
+    border-bottom: 3px solid black;
+}
+
+#sidemenu .event_banner .banner1 .tag {
+    display: inline-block;
+    width: 32px;
+    height: 19px;
+    border-radius: 40px;
+    border: 1px solid rgba(211,211,211,0.7);
+    color: #888;
+    font-size: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#sidemenu .event_banner .banner1 .text {
+    font-size: 13px;
+    line-height: 19px;
+    color: #888;
+    vertical-align: middle;
+}
+
+#sidemenu .event_banner .banner1 .ico_brunch {
+    overflow: hidden;
+    background: url(/brunchClone/img/logo_brunch.png) no-repeat;
+}
+
+#sidemenu .event_banner .banner1 .in_logo {
+    display: inline-block;
+    width: 14px;
+    height: 7px;
+    background-position: -60px -30px;
+    margin-left: 20px;
+}
+
+#sidemenu .event_banner .writer_img {
+    padding-bottom: 40px;
+    
+}
+
+#sidemenu .event_banner img {
+    width: 168px;
+}
+
+#sidemenu .find_acc {
+    font-size: 13px;
+    color: #959595;
+    border-bottom: 1px solid #bbb;
+}
+
+/** CONTENT 1
+--------------------------------------- */
+#content1 {
+    width: 800px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+#content1 .content_txt {
+    padding: 50px 30px 30px;
+}
+
+#content1 .content_txt .title .ico_brunch {
+    overflow: hidden;
+    background: url(/brunchClone/img/icon1.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+#content1 .content_txt .title .ico_logo {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin: 1px 6px 0 5px;
+    background-position: -120px -200px;
+    vertical-align: bottom;
+}
+
+#content1 .content_txt .title_p2 {
+    color: #dedede;
+}
+
+#content1 .update .up_logo {
+    font-size: 11px;
+    font-style: italic;
+    color: #00c3bd;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+#content1 .update a {
+    color: #959595;
+    font-size: 12px;
+}
+
+#content1 .update a:hover {
+    text-decoration: underline;
+}
+
+/** CONTENT 2
+--------------------------------------- */
+#content2 {
+    padding-top: 15px;
+}
+
+#content2 .content_item .item_s {
+    width: 760px;
+    margin: 0 auto;
+}
+
+#content2 ul {
+    width: 760px;
+    font-size: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#content2 li {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#content2 .item {
+    display: block;
+    width: 100%;
+}
+
+#content2 .title {
+    display: block;
+    width: 100%;
+    height: 208px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+#content2 .title:hover {
+    transform: scale(1.1, 1.1); 
+}
+
+#content2 .title .content_out {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#content2 .content_out > .content_in {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#content2 .swiper_btn .ico_brunch {
+    overflow: hidden;
+    background: url(/brunchClone/img/icon1.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+#content2 .swiper_btn {
+    position: relative;
+}
+
+#content2 .swiper_btn .prev_btn {
+    display: inline-block;
+    background-position: -167px -175px;
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+
+    position: absolute;
+    top: -260px;
+}
+
+#content2 .swiper_btn .next_btn {
+    display: inline-block;
+    background-position: -269px -175px;
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+
+    position: absolute;
+    top: -260px;
+    right: 0;
+}
+
+#content2 .number {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#content2 .number a {
+    padding: 0 10px;
+}
+
+#content2 .number span{
+    color: #333;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1px;
+}
+
+/** CONTENT 3
+--------------------------------------- */
+#content3 .brunch_title span {
+    display: block;
+    text-align: center;
+
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 46px;
+    font-weight: bold;
+    color: #959595;
+}
+
+#content3 .text_list {
+    width: 100%;
+    overflow-x: auto;
+
+}
+
+#content3 .item_text {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#content3 .item_text .text {
+    display: table-cell;
+    width: 119px;
+    height: 119px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #eee;
+}
+
+#content3 .item_text .text:hover {
+    border: 1px solid #00c3bd;
+    color: #00c3bd;
+}
+
+#content3 .text_list .item_text .text_s {
+    display: inline-block;
+    
+    width: 119px;
+    color: gray;
+    font-size: 14px;
+}
+
+#content3 .text_list .item_text .text .ico_brunch {
+    overflow: hidden;
+    background: url(/brunchClone/img/icon.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+#content3 .text_list .item_text .text .icon {
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-position: -77px -80px;
+
+    top: -20px;
+    right: -95px;
+}
+
+/** CONTENT 4
+--------------------------------------- */
+#content4 {
+    width: 100%;
+    text-align: center;
+    margin: 150px 0;
+    padding-bottom: 100px;
+    background-color: #FAFAFA;
+}
+
+#content4 .btn {
+    display: inline-block;
+    padding-bottom: 46px;
+}
+
+#content4 .btn .item_btn {
+    display: inline-block;
+    border: 1px solid #eee;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 15px;
+    padding: 7px 16px 6px;
+    color: #959595;
+}
+
+#content4 .btn .item_btn_on {
+    display: inline-block;
+    border: 1px solid #00c3bd;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 15px;
+    padding: 7px 16px 6px;
+    color: #00c3bd;
+}
+
+#content4 ul {
+    display: table;
+    width: 960px;
+    font-size: 0;
+    padding: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content4 li {
+    display: table-cell;
+    position: relative;
+    float: left;
+    width : 230px;
+    height: 288px;
+    min-height: 288px;
+    padding: 46px 40px;
+    margin: 5px;
+    background: white;
+}
+
+#content4 .writer  {
+    width : 230px;
+    height: 288px;
+    padding: 46px 40px;
+}
+
+#content4 .writer img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#content4 .writer .name {
+    padding: 17px 12px 0;
+    font-size: 20px;
+    font-family: 'Nanum Myeongjo',sans-serif;
+    color: #333;
+    font-weight: 400;
+}
+
+#content4 .writer .job {
+    font-weight: 400;
+    font-size: 11px;
+    padding: 10px 0;
+    color: #666;
+}
+
+#content4 .writer .introduce {
+    height: 60px;
+    font-weight: 400;
+    color: #959595;
+    padding-bottom: 0;
+}
+
+#content4 .writer .btn_keyword {
+    margin-top: 43px;
+}
+
+#content4 .writer .btn_keyword a {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    color: #959595;
+    font-size: 12px;
+
+    padding: 4px 10px;
+    margin: 0 2px;
+}
+
+/** BANNER
+--------------------------------------- */
+.banner_w {
+    display: block;
+    width: 960px;
+    margin: 97px auto 0;
+    position: relative;
+}
+
+/** CONTENT 5
+--------------------------------------- */
+#content5 .article {
+    position: relative;
+    overflow: hidden;
+}
+
+#content5 ul {
+    width: 5000px;
+    padding-left: 0;
+    margin: 0;
+    padding-bottom: 180px;
+    transition: left 0.5s;
+}
+
+#content5 li {
+    display: inline-block;
+    width: 240px;
+    padding: 0 10px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+#content5 .art_title {
+    display: block;
+    color: #333;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+#content5 a:hover .art_title {
+    text-decoration: underline;
+}
+
+#content5 .art_p {
+    display: block;
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #959595;
+}
+
+#content5 .wir {
+    display: inline-block;
+    padding-top: 22px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 20px;
+    color: #959595;
+}
+
+#content5 .info .by {
+    display: inline-block;
+    color: #bfbfbf;
+    font-family: 'Playfair Display', serif;
+}
+
+#content5 .slider_btn {
+    position: relative;
+}
+
+#content5 .slider_btn .ico_brunch {
+    overflow: hidden;
+    background: url(/brunchClone/img/icon1.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+#content5 .slider_btn .prev_btn {
+    display: block;
+    background-position: -167px -175px;
+    width: 100px;
+    height: 100px;
+}
+
+#content5 .slider_btn .btn_prev {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -450px;
+}
+
+#content5 .slider_btn .next_btn {
+    display: inline-block;
+    background-position: -269px -175px;
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+}
+
+#content5 .slider_btn .btn_next {
+    background-color: transparent;
+    border: none;
+
+    position: absolute;
+    top: -450px;
+    right: 0;
+}
+
+/** FOOTER
+--------------------------------------- */
+#footer {
+    width: 100%;
+    height: 353px;
+    background: black;
+}
+
+#footer .intro {
+    padding-top: 63px;
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#footer .not {
+    margin: 0 auto;
+    padding-bottom: 35px;
+}
+
+#footer .int {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 65px;
+}
+
+#footer .int .footer_brunch {
+    overflow: hidden;
+    background: url(/brunchClone/img/icon1.png) no-repeat 0 0;
+}
+
+#footer .int .logo {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 22px;
+    background-position: -320px -70px;
+}
+
+#footer .int .footer_txt {
+    overflow: hidden;
+    background: url(/brunchClone/img/icon3.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+#footer .int .img_txt {
+    display: block;
+    width: 184px;
+    height: 37px;
+    margin: 0 0 4px;
+    background-position: 0 -319px;
+}
+
+#footer .int .footer_cs {
+    overflow: hidden;
+    background: url(/brunchClone/img/icon3.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+#footer .int .cs_p {
+    display: block;
+    width: 68px;
+    height: 16px;
+    margin-top: 10px;
+    background-position: -190px -320px;
+}
+
+#footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin-top: -15px;
+}
+
+#footer li {
+    padding-left: 100px;
+}
+
+#footer li a {
+    color: #d9d9d9;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+#footer li a:hover {
+    text-decoration: underline;
+}
+
+#footer .kakao {
+    font-weight: bold;
+}
+
+#footer .etc {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 23px;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+
+#footer .etc .kakaocorp {
+    display: inline-block;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #959595;
+}
+
+#footer .etc .kakaocorp:hover {
+    text-decoration: underline;
+}
+
+#footer .etc .footer_and {
+    overflow: hidden;
+    background: url(/brunchClone/img/icon1.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+#footer .etc .ico_and {
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    background-position: -260px -100px;
+}
+
+#footer .etc .footer_i {
+    overflow: hidden;
+    background: url(/brunchClone/img/icon1.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+#footer .etc .ico_i {
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    background-position: -290px -100px;
+
+    margin-right: 5px;
+}
+
+#footer .etc ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer .etc li {
+    display: inline;
+    margin-left: 25px;
+    padding: 0;
+}

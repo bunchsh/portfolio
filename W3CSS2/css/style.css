@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+/* ALL
+--------------------------------------- */
+html, body {width: 100%; height: 100%; padding: 0; margin: 0;}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+a {
+    color: black;
+}
+
+/* float 처리
+--------------------------------------- */
+.pull-left {float: left;}
+.pull-right {float: right;}
+.clearfix::after {content: ''; display: block; clear: both; float: none;}
+
+/* HEADER
+--------------------------------------- */
+#header {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    padding: 13px 16px;
+
+    box-shadow: 0 0 5px grey;
+}
+
+#header a {
+    padding: 8px 16px;
+    letter-spacing: 3px;
+    text-decoration-line: none;
+}
+
+#header a:hover {
+    background-color: #ddd;
+}
+
+#header .menu {
+    float: right;
+}
+
+/* Container
+--------------------------------------- */
+.container {
+    width: 1500px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+/* LOGO
+--------------------------------------- */
+#logo img {
+    width: 1500px;
+    height: 800px;
+}
+
+#logo .logotext {
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    letter-spacing: 5px;
+    font-size: 36px;
+    color: white;
+}
+
+.logotext .BR {
+    padding: 8px 16px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* CONTENT1
+------------------------------------------- */
+#content1 .h {
+    padding: 32px 16px;
+}
+
+#content1 .h h1 {
+    font-weight: 400;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 16px 0;
+    margin: 10px 0;
+}
+
+/* CONTENT1 > images
+--------------------------------------------- */
+#content1 .gallery {
+    display: table
+}
+
+#content1 .images {
+    display: table-cell;
+    margin: auto;
+}
+
+#content1 .images li {
+    display: inline-block;
+    width: 22%;
+    padding: 0 8px;
+    overflow: hidden;
+}
+
+#content1 .image div {
+    position: absolute;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    width: auto;
+}
+
+/* CONTENT2
+---------------------------------------------- */
+#content2 .h {
+    padding: 32px 16px;
+}
+
+#content2 .h h1 {
+    font-weight: 400;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 16px 0;
+    margin: 10px 0;
+}
+
+/* CONTENT2 > user 
+------------------------------------------------- */
+#content2 .user li {
+    display: inline-block;
+    width: 22%;
+    padding: 0 8px;
+    overflow: hidden;
+}
+
+#content2 h1 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+#content2 .caption {
+    margin: 15px 0;
+    color: grey;
+}
+
+#content2 p {
+    margin: 15px 0;
+}
+
+#content2 button {
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    vertical-align: middle;
+}
+
+#content2 button:hover {
+    background-color: #ddd;
+}
+
+/* CONTACT
+-------------------------------------------------- */
+#contact .h {
+    padding: 32px 16px;
+}
+
+#contact .h h1 {
+    font-weight: 400;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 16px 0;
+    margin: 10px 0;
+}
+
+/* CONTACT > FORM
+------------------------------------------------- */
+#contact {
+    padding: 32px 16px;
+}
+
+#contact input {
+    width: 100%;
+    padding: 8px;
+    height: 25px;
+    margin-bottom: 16px;
+    border: 1px solid #eee;
+}
+
+#contact button {
+    padding: 8px 16px;
+    margin: 16px 0;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+#contact button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* MAP
+------------------------------------------------ */
+#map img{
+    width: 100%;
+    height: 800px;
+}
+
+/* footer
+------------------------------------------------ */
+#footer {
+    padding: 16px 0;
+    background: black;
+}
+
+#footer p {
+    margin: 15px;
+    text-align: center;
+    color: white;
+}
+
+#footer a {
+    color: white;
+}
+
+#footer a:hover {
+    color: green;
+}

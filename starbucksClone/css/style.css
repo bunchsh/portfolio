@@ -1,0 +1,1310 @@
+/** @Filename style.css
+@Author 한송희
+@Description Starbucks 화면 스타일 구성 */
+
+@charset "utf-8";
+
+/** 기본 설정
+--------------------------------------- */
+html, body {
+    width: 100%; height: 100%; padding: 0; margin: 0;
+
+}
+
+/** float 처리
+--------------------------------------- */
+.pull-right {float: right;}
+
+
+/** ALL
+--------------------------------------- */
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+/** HEADER
+--------------------------------------- */
+/* header */
+#header {
+    height: 120px;
+}
+
+#header .inner {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background: #f6f5ef;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 2px solid #000;
+    z-index: 999;
+}
+
+#header .header_inner {
+    position: relative;
+    min-width: 641px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+#header .header_inner .logo {
+    position: absolute;
+    display: inline-block;
+    padding: 20px;
+    width: 75px;
+    height: 75px;
+    z-index: 999;
+}
+
+#header .header_inner .menu {
+    display: inline-block;
+}
+
+#header .header_inner .menu ul {
+    float: left;
+}
+
+/* service menu */
+
+#header .header_inner .servicebar {
+    position: absolute;
+    top: 15px;
+    right: 70px;
+}
+
+#header .header_inner .service {
+    position: absolute;
+    width: 464px;
+    height: 20px;
+    top: 0;
+    right: 20px;
+}
+
+#header .header_inner .service li {
+    float: left;
+    border-right: 1px solid #bbb;
+    text-align: center;
+}
+
+#header .header_inner .service a {
+    color: #555;
+    font-size: 13px;
+}
+
+#header .header_inner .servicebar .search {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: -5px;
+    right: -20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#header .header_inner .servicebar .search:active {
+    width: 180px;
+}
+
+#header .header_inner .servicebar .search a {
+    display: block;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#header .header_inner .servicebar .search a>img {
+    position: absolute;
+    right: 7px;
+    top: 6px;
+    z-index: 1;
+    max-width: 100%;
+}
+
+#header .header_inner .servicebar .search p>.search_input {
+    display: none;
+    width: 123px;
+    height: 22px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: none;
+    border: none;
+    color: #777;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+#header .header_inner .servicebar .search:active p>.search_input {
+    display: inline-block;
+}
+
+#header .header_inner .servicebar .search:focus .header_inner>.service {
+    right: 232px;
+}
+
+/* catagory menu */
+#header .cata {
+    z-index: 10;
+}
+
+#header .cata .menubar {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 11;
+}
+
+#header .cata .menubar .menu {
+    left: 0;
+    min-width: 641px;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header .cata .menubar .menu .menu_list {
+    float: right;
+}
+
+#header .cata .menubar .menu li {
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#header .cata .menubar .menu h3 a {
+    display: block;
+    width: 100%;
+    height: 66px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    padding-top: 10px;
+}
+
+#header .cata .menubar .menu li a {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+}
+
+#header .cata .menubar .menu li:hover .sub {
+    visibility: visible;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+#header .cata .menubar .menu li:hover h3>a {
+    background: #2C2A29;
+    color: green;
+    text-decoration: underline;
+}
+
+#header .cata .menubar .menu .sub {
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    top: 90px;
+    left: 10px;
+    background: #2C2A29;
+    margin: 0 auto;
+
+    max-height: 0px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+#header .cata .menubar .menu .sub ul li {
+    padding: 3px 0;
+}
+
+#header .cata .menubar .menu .sub a:hover {
+    text-decoration: underline;
+}
+
+#header .cata .menubar .menu .sub .sub_menu .menu_inner {
+    width: 1100px;
+    float: left;
+}
+
+#header .cata .menubar .menu .sub .sub_menu .sub_title a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 0;
+}
+
+#header .cata .menubar .menu .sub .sub_menu {
+    display: inline-block;
+    max-width: 1100px;
+    min-width: 641px;
+    margin: 0 auto;
+    padding: 10px 0 20px 0;
+}
+
+#header .cata .menubar .menu .sub .sub_menu ul {
+    float: left;
+    width: 220px;
+}
+
+#header .cata .menubar .menu .sub .sub_menu li {
+    float: none;
+}
+
+#header .cata .menubar .menu .sub .sub_txt {
+    background: url(/starbucksClone/img/gnb_sub_txbg.jpg);
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0 40px 0;
+    margin: 0 auto;
+}
+
+#header .cata .menubar .menu .sub .sub_txt .txt_inner {
+    width: 100%;
+    max-width: 1100px;
+    min-width: 641px;
+    margin: 0 auto; 
+}
+
+#header .cata .menubar .menu .sub .sub_txt .txt_inner .sub_title {
+    margin: 0;
+}
+
+#header .cata .menubar .menu .sub .sub_txt .txt_inner .sub_title a {
+    font-size: 12px;
+    color: #999;
+    text-align: left;
+}
+
+#header .cata .menubar .menu .sub li a {
+    font-size: 12px;
+    color: #999;
+    text-align: left;
+}
+
+#header .cata .menubar .menu .sub .sub_txt p {
+    color: #64a70b;
+    font-size: 12px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+
+/** fixed banner
+--------------------------------------- */
+#header .fixedbanner {
+    overflow: hidden;
+}
+
+#header .fixedbanner .banner {
+    position: fixed;
+    top: 154px;
+    left: 54.5%;
+    width: 140px;
+    margin-left: 485px;
+    z-index: 999;
+}
+
+
+/** CONTAINER
+--------------------------------------- */
+
+/* content1 */
+#content1 {
+    height: 646px;
+    background: #d1131d no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#content1 .banneritem {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#content1 .banneritem div {
+    opacity: 1;
+}
+
+#content1 .banneritem img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+#content1 .banneritem .slogan {
+    position: absolute;
+    margin-left: 20px;
+    left: 0;
+    bottom: 71.36222910216718%;
+    z-index: 4;
+
+    width: 328px;
+    max-width: 328px;
+}
+
+#content1 .banneritem .drink1 {
+    position: absolute;
+    width: 27.31481481481481%;
+    right: 50%;
+    margin-right: -5%;
+    max-width: 295px;
+    bottom: 63px;
+    z-index: 2;
+}
+
+#content1 .banneritem .drink2 {
+    position: absolute;
+    width: 46.57407407407407%;
+    right: 50%;
+    margin-right: -38.24074074074074%;
+    max-width: 503px;
+    bottom: 79px;
+    z-index: 1;
+}
+
+#content1 .banneritem .drink3 {
+    position: absolute;
+    width: 21.85185185185185%;
+    right: -3.888888888888889%;
+    max-width: 236px;
+    bottom: 63px;
+    z-index: 3;
+}
+
+#content1 .banneritem .button {
+    position: absolute;
+    top: 34.98452012383901%;
+    left: 12%;
+    z-index: 5;
+}
+
+#content1 .banneritem .button button {
+    width: 129px;
+    height: 100%;
+    margin: 0 auto;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #ffffff;
+    font-size: 15px;
+    line-height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#content1 .banneritem .bg .top {
+    position: absolute;
+    right: 2.314814814814815%;
+    top: 0;
+    width: 249px;
+    height: 13.0030959752322%;
+}
+
+#content1 .banneritem .bg .bottom {
+    position: absolute;
+    left: -4.62962962962963%;
+    bottom: 0;
+    width: 348px;
+    height: 23.21981424148607%;
+}
+
+
+/* content2 */
+/* banner menu */
+#content2 .notice {
+    position: relative;
+    width: 100%;
+    height: 62px;
+}
+
+#content2 .notice .left_bg {
+    background: #111;
+    height: 62px;
+    width: 50%;
+}
+
+#content2 .notice .right_bg {
+    background: #f6f5ef;
+    height: 62px;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#content2 .notice .notice_inner {
+    background: none;
+    width: 960px;
+    height: 62px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    margin-left: -460px;
+}
+
+#content2 .notice .left {
+    width: 50%;
+    height: 62px;
+    background: #111;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#content2 .notice .left .leftlist {
+    height: 36px;
+    width: 621px;
+    margin: 15px auto;
+    position: absolute;
+    left: -100px;
+}
+
+#content2 .notice .left .leftlist .noticetitle {
+    display: inline-block;
+    width: 65px;
+    height: 17px;
+}
+
+#content2 .notice .left .leftlist .rolling {
+    display: inline-block;
+    width: 520px;
+    height: 24px;
+    text-indent: 15px;
+    overflow: hidden;
+}
+
+#content2 .notice .left .leftlist .rolling li {
+    padding-top: 5px;
+}
+
+#content2 .notice .left .leftlist .rolling li a {
+    font-size: 13px;
+    color: white;
+}
+
+#content2 .notice .left .morebtn {
+    height: 36px;
+    width: 36px;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+
+#content2 .notice .left .morebtn img {
+    height: 36px;
+    width: 36px;
+}
+
+#content2 .notice .right {
+    width: 50%;
+    height: 62px;
+    float: right;
+    position: relative;
+}
+
+#content2 .notice .right .rightlist .promotion {
+    position: absolute;
+    height: 36px;
+    left: 37%;
+    top: 13px;
+    width: 234px;
+    margin: 7px auto;
+}
+
+#content2 .notice .right .rightlist .promotion .arrow {
+    background: url(/starbucksClone/img/btn_prom_up.png);
+    position: absolute;
+    float: right;
+    width: 36px;
+    height: 36px;
+    top: -8px;
+    right: 0px;
+}
+
+#content2 .notice .right .rightlist .collapsed .arrow {
+    background: url(/starbucksClone/img/btn_prom_down.png);
+    width: 36px;
+    height: 36px;
+    top: -8px;
+    right: 0px;
+}
+
+#content2 .notice .right .rightlist .promotion .promo img {
+    height: 17px;
+    left: 0;
+    top: 9px;
+    width: 129px;
+}
+
+/* banner slide */
+#content2 .promo_banner {
+    height: 658px;
+    background: #f6f5ef;
+    border-top: 1px solid #f6f5ef;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+    transition: all .2s ease-in-out
+}
+
+.collapse{display:none}
+.collapse.in{display:block}
+
+#content2 .promo_banner .slider {
+    height: 553px;
+    margin-top: 39px;
+    margin-left: -550px;
+    width: 1100px;
+
+    left: 50%;
+    position: relative;
+    text-align: center;
+}
+
+#content2 .promo_banner .slider .wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+}
+
+#content2 .promo_banner .slider .wrapper .viewport .banner_slider li a {
+    display: block;
+    width: 121px;
+    height:34px;
+    color: #222;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+    margin: -60px auto 0;
+    border: 2px solid #222;
+    border-radius: 3px;
+    position: relative;
+    transition: background-color .7s, color .7s;
+}
+
+#content2 .promo_banner .slider .wrapper .viewport .banner_slider {
+    width: 515%;
+    position: relative;
+    margin-left: 135px;
+}
+
+#content2 .promo_banner .slider .wrapper .viewport .banner_slider li {
+    float: left;
+    position: relative;
+    margin: 0 5px;
+    width: 819px;
+}
+
+#content2 .promo_banner .slider .left_btn {
+    position: absolute;
+    height: 553px;
+    left: 0;
+    top: 0;
+    width: 131px;
+    z-index: 11;
+}
+
+#content2 .promo_banner .slider .right_btn {
+    position: absolute;
+    height: 553px;
+    right: 0;
+    top: 0;
+    width: 131px;
+    z-index: 11;
+}
+
+#content2 .promo_banner .controller {
+    bottom: -20px;
+    height: 12px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+
+#content2 .promo_banner .controller .slider_controls {
+    display: inline-block;
+    height: 12px;
+    position: relative;
+    width: 9px;
+}
+
+#content2 .promo_banner .slider_controls .controls {
+    position: absolute;
+}
+
+#content2 .promo_banner .numbers {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#content2 .promo_banner .numbers .number_items .number_item {
+    float: left;
+    margin-left: 8px;
+}
+
+#content2 .promo_banner .numbers .number_items .number_item .number_link {
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(/starbucksClone/img/main_prom_off.png) 0 0 no-repeat;
+    height: 12px;
+    width: 13px;
+}
+
+#content2 .promo_banner .numbers .number_items .number_item .number_link.active {
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(/starbucksClone/img/main_prom_on.png) 0 0 no-repeat;
+    height: 12px;
+    width: 13px;
+}
+
+#content2 .promo_banner .prevBtn {
+    position: absolute;
+    left: 3%;
+    top: 225px;
+    z-index: 2222;
+}
+
+#content2 .promo_banner .prevBtn a {
+    display: block;
+    background: url(/starbucksClone/img/arrow_left_on.png) no-repeat center center transparent;
+    width: 51px;
+    height: 51px;
+    text-indent: -9999px;
+    border: 2px solid #222;
+    border-radius: 27.5px;
+    transition: background-color .7s, color .7s;
+}
+
+#content2 .promo_banner .nextBtn {
+    position: absolute;
+    right: 3%;
+    top: 225px;
+    z-index: 2001;
+}
+
+#content2 .promo_banner .nextBtn a {
+    display: block;
+    background: url(/starbucksClone/img/arrow_right_on.png) no-repeat center center transparent;
+    width: 51px;
+    height: 51px;
+    text-indent: -9999px;
+    border: 2px solid #222;
+    border-radius: 27.5px;
+    transition: background-color .7s, color .7s;
+}
+
+
+/* content3 */
+#content3 {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: #1e3932;
+}
+
+#content3 .rewards {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+#content3 .rewards::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#content3 .rewards .logo {
+    float: left;
+    width: 16.3%;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+#content3 .rewards .logo img {
+    padding-top: 20px;
+    width: 176px;
+    max-width: 100%;
+}
+
+#content3 .rewards .inner {
+    float: left;
+    width: calc(83.7% - 80px);
+    box-sizing: border-box;
+    padding-right: 30px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+#content3 .rewards .inner .info {
+    position: relative;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #4b615b;
+}
+
+#content3 .rewards .inner .btn_sign {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+#content3 .rewards .inner .btn_sign .join {
+    display: inline-block;
+    height: 38px;
+    padding: 0 18.5px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    
+    background-color: #00704a;
+    border: 2px solid #00704a;
+    border-radius: 5px;
+}
+
+#content3 .rewards .inner .btn_sign .join:hover {
+    text-decoration: underline;
+}
+
+#content3 .rewards .inner .btn_sign .login {
+    display: inline-block;
+    height: 38px;
+    padding: 0 18.5px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+#content3 .rewards .inner .btn_sign .login:hover {
+    text-decoration: underline;
+}
+
+#content3 .rewards .inner .gift {
+    position: relative;
+}
+
+#content3 .rewards .inner .gift_txt p {
+    font-size: 13px;
+}
+
+#content3 .rewards .inner .gift_btn {
+    position: absolute;
+    bottom: 20px;
+    top: 0;
+    right: 0;
+}
+
+#content3 .rewards .inner .gift_btn a {
+    display: inline-block;
+    height: 38px;
+    padding: 0 18.5px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+#content3 .rewards .inner .gift_btn a:hover {
+    text-decoration: underline;
+}
+
+
+/* content4 */
+#content4 {
+    overflow: hidden;
+    position: relative;
+    height: 573px;
+    background: #ff9ba1 url(/starbucksClone/img/2021_christmas_bean_bg.jpg) no-repeat 50% 50%;
+    background-size: 100% 100%;
+}
+
+#content4 .chris_banner {
+    position: relative;
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#content4 .chris_banner .imgbox {
+    position: absolute;
+    top: 50%;
+    left: 9.53704%;
+    margin-top: -18%;
+    margin-left: 40px;
+    width: 44.81481481481481%;
+    right: 45.64814814814815%;
+    z-index: 1;
+}
+
+#content4 .chris_banner .imgbox img {
+    width: 100%;
+}
+
+#content4 .chris_banner .txtbox {
+    position: absolute;
+    margin-right: 0;
+    top: 31.99300699300699%;
+    right: 16.5741%;
+    width: 29.35185185185185%;
+}
+
+#content4 .chris_banner .txtbox img {
+    width: 100%;
+}
+
+#content4 .chris_banner .txtbox .btn {
+    width: 125px;
+    height: 38px;
+    margin-top: 39px;
+}
+
+#content4 .chris_banner .txtbox .btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 18.5px;
+    line-height: 34px;
+    font-size: 15px;
+    color: #453d3d;
+    text-align: center;
+    box-sizing: border-box;
+    
+    border: 2px solid #453d3d;
+    border-radius: 5px;
+}
+
+#content4 .chris_banner .txtbox .btn a:hover {
+    background-color: #453d3d;
+    color: #fff;
+    text-decoration: underline;
+    transition: background-color .7s, color .7s;
+}
+
+
+/* content5 */
+#content5 {
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    background-size: 100% 100%;
+    background: url(/starbucksClone/img/reserve_christmas_bean_211018.jpg) no-repeat 0 0;
+}
+
+#content5 .merry .title {
+    position: relative;
+    z-index: 10;
+    padding-top: 143px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#content5 .merry .btn {
+    position: relative;
+    z-index: 10;
+    max-width: 1100px;
+    width: 583px;
+    height: 38px;
+    margin: -1px auto 0 550px;
+    box-sizing: border-box;
+}
+
+#content5 .merry .btn a {
+    display: block;
+    margin: 0 auto;
+    width: 125px;
+    height: 100%;
+    color: #d5a012;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+    border: 2px solid #d5a012;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#content5 .merry .btn a:hover {
+    color: #fff;
+    background-color: #d5a012;
+    text-decoration: underline;
+    transition: background-color .7s, color .7s, border-color .7s;
+}
+
+
+/* content6 */
+#content6 {
+    background: url(/starbucksClone/img/fav_prod_bg_new.jpg) center center fixed no-repeat #45434c;
+    background-size: auto 100%;
+    height: 801px;
+    padding: 0;
+    position: relative;
+}
+
+#content6 .inner {
+    left: 50%;
+    margin-left: -640px;
+    position: absolute;
+    top: 0;
+    width: 1280px;
+}
+
+#content6 .inner .title {
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+
+#content6 .inner .text {
+    position: absolute;
+    top: 370px;
+    left: 92px;
+}
+
+#content6 .inner .btn {
+    position: absolute;
+    top: 570px;
+    left: 328px;
+    width: 125px;
+    height: 38px;
+}
+
+#content6 .inner .btn a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 34px;
+
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#content6 .inner .btn a:hover {
+    color: #000;
+    background-color: #fff;
+    text-decoration: underline;
+    transition: background-color .7s, color .7s, border-color .7s;
+}
+
+#content6 .inner .img {
+    position: absolute;
+    top: 100px;
+    right: -10px;
+}
+
+
+/* content7 */
+#content7 {
+    background: url(/starbucksClone/img/reserve_bg_pc.png) no-repeat;
+    height: 400px;
+    background-size: auto 338px;
+    background-position: 53% 100%;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#content7 .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#content7 .inner .title {
+    position: relative;
+    z-index: 10;
+    padding-top: 135px;
+    padding-left: 55px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#content7 .inner .btn {
+    position: absolute;
+    left: 520px;
+    width: 125px;
+    height: 38px;
+    margin: 33px auto 0;
+    box-sizing: border-box;
+    padding-left: 225px;
+}
+
+#content7 .inner .btn a {
+    color: #000;
+    display: block;
+    width: 125px;
+    height: 100%;
+    line-height: 34px;
+
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#content7 .inner .btn a:hover {
+    color: #fff;
+    background-color: #000;
+    text-decoration: underline;
+    transition: background-color .7s, color .7s, border-color .7s;
+}
+
+#content7 .inner .img {
+    display: block;
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    right: 50%;
+    margin-right: -483px;
+}
+
+
+/* content8 */
+#content8 {
+    background: url(/starbucksClone/img/store_bg.jpg) no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+#content8 .inner {
+    left: 50%;
+    margin-left: -640px;
+    position: absolute;
+    top: 0;
+    width: 1280px;
+}
+
+#content8 .inner .img1 {
+    position: absolute;
+    top: 149px;
+    left: 390px;
+    width: 228px;
+    height: 228px;
+    z-index: 5;
+}
+
+#content8 .inner .img2 {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    width: 366px;
+    height: 312px;
+    z-index: 4;
+}
+
+#content8 .inner .img3 {
+    position: absolute;
+    top: -60px;
+    left: 520px;
+    width: 343px;
+    height: 520px;
+    z-index: 4;
+}
+
+#content8 .inner .img4 {
+    position: absolute;
+    top: 298px;
+    right: 30px;
+    width: 230px;
+    height: 102px;
+    z-index: 4;
+}
+
+#content8 .inner .text1 {
+    position: absolute;
+    top: 100px;
+    right: 149px;
+    width: 385px;
+    height: 54px;
+    z-index: 4;
+}
+
+#content8 .inner .text2 {
+    position: absolute;
+    top: 168px;
+    right: 168px;
+    width: 366px;
+    height: 61px;
+    z-index: 4;
+}
+
+#content8 .inner .btn {
+    position: absolute;
+    top: 258px;
+    right: 402px;
+    width: 121px;
+    height: 34px;
+    z-index: 4;
+}
+
+#content8 .inner .btn a {
+    color: #000;
+    display: block;
+    width: 121px;
+    height: 34px;
+    line-height: 30px;
+
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#content8 .inner .btn a:hover {
+    color: #fff;
+    background-color: #000;
+    text-decoration: underline;
+    transition: background-color .7s, color .7s, border-color .7s;
+}
+
+
+/** FOOTER
+--------------------------------------- */
+#footer {
+    position: relative;
+    width: 100%;
+    padding: 32px 0 35px 0;
+    background: #2C2A29;
+}
+
+/* foo1 */
+#footer .foo1 {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    width: 1182;
+    margin-left: -591px;
+    background: url(/starbucksClone/img/footer_logo.png) right 8px no-repeat;
+}
+
+#footer .foo1 .footer_menu ul {
+    display: inline-block;
+    width: 220px;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+#footer .foo1 .footer_menu li a {
+    color: #fff;
+    width: 100%;
+    font-size: 12px;
+}
+
+#footer .foo1 .footer_menu li.title a {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+/* foo2 */
+#footer .foo2 {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+    margin-top: 40px;
+    background-color: #282828;
+}
+
+#footer .foo2 .awards {
+    position: absolute;
+    left: 50%;
+    width: 1182px;
+    margin-left: -591px;
+    padding-bottom: 20px;
+}
+
+#footer .foo2 .awards li {
+    float: left;
+}
+
+/* foo3 */
+#footer .foo3 {
+    position: relative;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%;
+    padding-top: 30px;
+
+    color: #999;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+#footer .foo3 .terms a {
+    padding: 0 10px;
+    border-right: 1px solid #393939;
+    color: #ccc;
+}
+
+#footer .foo3 .terms a.strong {
+    font-weight: bold;
+    color: #00b050;
+}
+
+#footer .foo3 .btn a {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    margin: 10px 2px 0 3px;
+    padding: 0 10px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 30px;
+}
+
+#footer .foo3 .btn a:hover {
+    text-decoration: underline;
+}
+
+#footer .foo3 .copy .copy_menu {
+    padding: 25px 0 5px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#footer .foo3 .copy .copy_menu li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+#footer .foo3 .copy .copyright {
+    line-height: 40px;
+}

@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+/* 기본설정
+--------------------------------------- */
+html, body {width: 100%; height: 100%; padding: 0; margin: 0; color: #777; line-height: 1.8;}
+
+body, h1, h2, h3, p{
+    font-family: 'Karma', serif;
+    line-height: 1.5;
+    color: black;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.all {
+    max-width: 1200px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+/* float 처리
+--------------------------------------- */
+.pull-left {float: left;}
+.pull-right {float: right;}
+.clearfix::after {content: ''; display: block; clear: both; float: none;}
+
+/* header
+--------------------------------------- */
+#header {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+#header div {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+#header .bar {
+    padding: 16px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#header .headertitle {
+    padding: 16px;
+}
+
+#header .mail {
+    padding: 16px 0;
+}
+
+#header .bar:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#header .headertitle {
+    display: inline-block;
+    text-align: center;
+}
+
+/* content 1
+--------------------------------------- */
+#container1 {
+    float: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    vertical-align: middle;
+}
+
+#container1 li {
+    display: inline-block;
+    width: 22%;
+    height: 520px;
+    padding: 16px 8px;
+    overflow: hidden;
+}
+
+#container1 li img {
+    display: inline-block;
+    width: 100%;
+}
+
+/* content 1 > 번호 목록
+---------------------------------------- */
+#number {
+    padding: 32px 0;
+    text-align: center;
+}
+
+#number .one {
+    background-color: black;
+    color: white;
+}
+
+#number a {
+    padding: 8px 16px;
+    width: auto;
+    border: none;
+    display: inline-block;
+
+    text-decoration: none;
+    color: black;
+}
+
+#number .one:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#number a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* content 2
+---------------------------------------- */
+#container2 {
+    text-align: center;
+    padding: 32px 16px;
+}
+
+#container2 h2 {
+    margin: 10px 0;
+    padding-bottom: 16px;
+}
+
+#container2 .intro {
+    padding: 32px 0;
+}
+
+#container2 h3 {
+    font-size: 20px;
+}
+
+#container2 .caption {
+    font-style: italic;
+}
+
+/* footer
+--------------------------------------- */
+#footer {
+    padding: 32px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 16px;
+}
+
+#footer div {
+    vertical-align: top;
+}
+
+#footer h3 {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+/* FOOTER */
+.footer a {
+    color: black;
+}
+
+/* BLOGPOSTS */
+.footer-box div {
+    display: inline-block;
+    width: 30%;
+    padding: 0 8px;
+}
+
+.footer-box .blog .title {
+    font-size: 18px;
+}
+
+.footer-box .blog span {
+    list-style: none;
+    font-size: 15px;
+}
+
+.footer-box .blog img {
+    float: left;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.blog .lorem {
+    border-bottom: 1px solid #ddd;
+}
+
+.blog li {
+    padding: 16px;
+}
+
+.blog li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* POPULAR TAGS */
+.tag span {
+    display: inline-block;
+    text-align: center;
+    background-color: #616161;
+    color: white;
+    font-size: 12px;
+    font-family: serif;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.tag .black {
+    background-color: black;
+    font-size: 15px;
+}

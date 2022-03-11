@@ -1,0 +1,497 @@
+@charset "utf-8";
+
+/* 기본설정
+--------------------------------------- */
+html, body {width: 100%; height: 100%; padding: 0; margin: 0; color: #777; line-height: 1.8;}
+
+body, h1, h2, h3, h4, h5, h6, p, a{
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+}
+
+/* float 처리
+--------------------------------------- */
+.pull-left {float: left;}
+.pull-right {float: right;}
+.clearfix::after {content: ''; display: block; clear: both; float: none;}
+
+/* header
+--------------------------------------- */
+#header {
+    height: 55px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#header .container {
+    width: auto;
+    margin: auto;
+}
+
+#header .menu a {
+    font-size: 19px;
+    font-weight: bold;
+    padding: 17px 20px;
+}
+
+#header .menu .pull-left:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#header .menu .pull-right:hover {
+    background-color: rgba(255, 0, 0, 1);
+    color: white;
+}
+
+#header .menu  a{
+    color: #777;
+}
+
+#header .menu a:hover {
+    color: #000;
+}
+
+/* header
+--------------------------------------- */
+#logo {
+    width: 100%;
+    height: 500px;
+}
+
+#logo .container {
+    width: 100%;
+    height: 500px;
+}
+
+#logo .container .container-box {
+
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    display: table;
+}
+
+#logo .container-box-cell {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#logo .container-box-cell .title {
+    background-color: #444;
+    width: 500px;
+    height: 47px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+#logo .container-box-cell h1 {
+    font-size: 30px;
+    padding-left: 20px;
+
+
+    color: white;
+    font-weight: bolds;
+    letter-spacing: 13px;
+    text-align: center;
+}
+
+/* content1
+--------------------------------------- */
+.content1 .aboutme {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.p1 h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.p1 h3 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.aboutme .p1 p {
+    padding-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.aboutme .content-box {
+    height: 500px;
+}
+
+.aboutme .user {
+    float: left;
+    width: 60%;
+
+}
+
+.aboutme .user h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.aboutme .userimg {
+    text-align: center;
+}
+
+.aboutme .p2 {
+    width: 40%;
+    float: left;
+}
+
+.aboutme .p2 p {
+    padding-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.aboutme .good {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.aboutme .good h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+.aboutme .good .goodtext {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+
+    letter-spacing: 10px;
+    padding-bottom: 15px;
+}
+
+.aboutme .good .grey {
+    background-color: #eee;
+    color: white;
+    text-align: center;
+}
+
+.aboutme .good .in {
+    background-color: #666;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.content-box2 .section-box {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #666;
+    color: white;
+}
+
+.content-box2 .section {
+    text-align: center;
+    display: inline-block;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.content-box2 .numbersection {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* content2
+------------------------------------------ */
+#logo2 {
+    width: 100%;
+    height: 500px;
+}
+
+#logo2 .container {
+    width: 100%;
+    height: 500px;
+}
+
+#logo2 .container .container-box {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    display: table;
+}
+
+#logo2 .container-box-cell {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#logo2 .container-box-cell .title {
+    width: 500px;
+    height: 47px;
+    padding: 10px;
+    margin: auto;
+}
+
+#logo2 .container-box-cell h1 {
+    font-size: 30px;
+    padding-left: 20px;
+
+    color: white;
+    font-weight: bolds;
+    letter-spacing: 13px;
+    text-align: center;
+}
+
+.content2 .gallery {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 900px;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* content2 > gallery
+--------------------------------------- */
+ul, li {
+    list-style: none;
+}
+
+#image-container ul{
+    width: 900px;
+    text-align: center;
+}
+
+#image-container {
+    padding-top: 40px;
+    width: 900px;
+}
+
+.content2 .item-box li {
+    float: left;
+    width: 25%;
+}
+
+.content2 .item-box img {
+    width: auto;
+    height: 150px;
+    padding: 10px;
+    overflow: hidden;
+    transition: all 0.1s;
+
+}
+
+
+/* content2 > button
+-------------------------------------------- */
+.content2 .button {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.content2 button {
+    background-color: #f1f1f1;
+    border: none;
+    font-size: 15px;
+    padding: 15px 20px;
+}
+
+.content2 button:hover {
+    background-color: #ddd;
+}
+
+
+/* content3
+-------------------------------------------- */
+#logo3 {
+    width: 100%;
+    height: 500px;
+}
+
+#logo3 .container {
+    width: 100%;
+    height: 500px;
+}
+
+#logo3 .container .container-box {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    display: table;
+}
+
+#logo3 .container-box-cell {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#logo3 .container-box-cell .title {
+    width: 500px;
+    height: 47px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+#logo3 .container-box-cell h1 {
+    font-size: 30px;
+    padding-left: 20px;
+
+
+    color: white;
+    font-weight: bolds;
+    letter-spacing: 13px;
+    text-align: center;
+}
+
+.content3 .whereiwork {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 900px;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.content3 .whereiwork .map {
+    padding-top: 40px;
+}
+
+.content3 .whereiwork .map .container {
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+.content3 .whereiwork .map .panel {
+    width: 60%;
+    float: left;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.content3 .whereiwork .map .panel p {
+    font-size: 15px;
+}
+
+.content3 .whereiwork .panel .login input{
+    font-size: 15px;
+    float: left;
+    margin: 8px;
+}
+
+.content3 .whereiwork .panel .login input {
+    width: 230px;
+    height: 30px;
+    padding: 8px;
+    border: 1px solid #ccc;
+
+}
+
+.content3 .whereiwork .panel input {
+    font-size: 15px;
+    width: 490px;
+    height: 30px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.content3 .whereiwork .panel .input {
+    margin: 8px;
+    margin-bottom: 16px;
+}
+
+.content3 .whereiwork .panel button {
+    float: right;
+    margin: 0 16px;
+    padding: 15px 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+.content3 .whereiwork .panel .send {
+    padding-top: 15px;
+}
+
+.content3 .whereiwork .panel button:hover {
+    background-color: #eee;
+    color: black;
+}
+
+/* footer
+------------------------------- */
+#footer {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding: 64px;
+    background-color: #666;
+    color: white;
+}
+
+#footer:hover {
+    background-color: black;
+}
+
+#footer button {
+    padding: 15px 25px;
+    font-size: 15px;
+    color: #777;
+}
+
+#footer .section {
+    margin: 16px 0;
+    font-size: 24px;
+}
+
+#footer p {
+    margin: 15px 0;
+}
+
+#footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+#footer a:hover {
+    color: green;
+}

@@ -50,7 +50,7 @@ li {
 #header {
     min-width: 1200px;
     border-top: 3px solid #ff7c98;
-    background: url(/BRclone/img/bg_header.gif);
+    background: url(./img/bg_header.gif);
     border-bottom: 1px solid #e2d9d6;
 }
 
@@ -99,7 +99,7 @@ li {
     display: inline-block;
     width: 54px;
     height: 54px;
-    background: url(/BRclone/img/icon_search.png) no-repeat;
+    background: url(./img/icon_search.png) no-repeat;
     text-indent: -9999px;
 
     vertical-align: middle;
@@ -120,7 +120,7 @@ li {
     display: block;
     width: 40px;
     height: 46px;
-    background: url(/BRclone/img/gnb_menu.png) no-repeat;
+    background: url(./img/gnb_menu.png) no-repeat;
     text-indent: -9999px;
 
     margin-right: 23px;
@@ -130,7 +130,7 @@ li {
     display: block;
     width: 27px;
     height: 46px;
-    background: url(/BRclone/img/gnb_menu.png) no-repeat;
+    background: url(./img/gnb_menu.png) no-repeat;
     text-indent: -9999px;
 
     background-position: -97px -1px;
@@ -163,7 +163,7 @@ li {
     display: block;
     width: 164px;
     height: 46px;
-    background: url(/BRclone/img/gnb_menu.png) no-repeat;
+    background: url(./img/gnb_menu.png) no-repeat;
     text-indent: -9999px;
 
     background-position: -133px -3px;
@@ -212,7 +212,7 @@ li {
     display: block;
     width: 42px;
     height: 46px;
-    background: url(/BRclone/img/gnb_menu.png) no-repeat;
+    background: url(./img/gnb_menu.png) no-repeat;
     text-indent: -9999px;
 
     background-position: -415px -3px;
@@ -223,7 +223,7 @@ li {
     display: block;
     width: 105px;
     height: 46px;
-    background: url(/BRclone/img/gnb_menu.png) no-repeat;
+    background: url(./img/gnb_menu.png) no-repeat;
     text-indent: -9999px;
 
     background-position: -545px -3px;
@@ -234,7 +234,7 @@ li {
     display: block;
     width: 42px;
     height: 46px;
-    background: url(/BRclone/img/gnb_menu.png) no-repeat;
+    background: url(./img/gnb_menu.png) no-repeat;
     text-indent: -9999px;
 
     background-position: -737px -3px;
@@ -245,7 +245,7 @@ li {
     display: block;
     width: 49px;
     height: 46px;
-    background: url(/BRclone/img/gnb_menu.png) no-repeat;
+    background: url(./img/gnb_menu.png) no-repeat;
     text-indent: -9999px;
 
     background-position: -897px -3px;
@@ -256,7 +256,7 @@ li {
     display: block;
     width: 49px;
     height: 46px;
-    background: url(/BRclone/img/gnb_menu.png) no-repeat;
+    background: url(./img/gnb_menu.png) no-repeat;
     text-indent: -9999px;
 
     background-position: -1057px -3px;
@@ -281,7 +281,7 @@ li {
     width: 1200px;
     height: 203px;
     margin: 0 auto;
-    background: url(/BRclone/img/img_happypoint_app.jpg) no-repeat 0 65px;
+    background: url(./img/img_happypoint_app.jpg) no-repeat 0 65px;
 }
 
 /* search */
@@ -425,7 +425,7 @@ li {
     display: block;
     min-width: 1200px;
     height: 150px;
-    background:#7DC9E2 url(/BRclone/img/month_f.jpg) 50% 0 no-repeat;
+    background:#7DC9E2 url(./img/month_f.jpg) 50% 0 no-repeat;
 }
 
 /* banner */
@@ -448,31 +448,31 @@ li {
     display: inline-block;
     width: 1519.2px;
     height: 697px;
-    background: url(/BRclone/img/banner1.jpg);
+    background: url(./img/banner1.jpg);
 }
 #slide #swap .slide_wrap .banner_2 a {
     display: inline-block;
     width: 1519.2px;
     height: 697px;
-    background: url(/BRclone/img/banner2.png);
+    background: url(./img/banner2.png);
 }
 #slide #swap .slide_wrap .banner_3 a {
     display: inline-block;
     width: 1519.2px;
     height: 697px;
-    background: url(/BRclone/img/banner3.png);
+    background: url(./img/banner3.png);
 }
 #slide #swap .slide_wrap .banner_4 a {
     display: inline-block;
     width: 1519.2px;
     height: 697px;
-    background: url(/BRclone/img/banner4.png);
+    background: url(./img/banner4.png);
 }
 #slide #swap .slide_wrap .banner_5 a {
     display: inline-block;
     width: 1519.2px;
     height: 697px;
-    background: url(/BRclone/img/banner5.jpg);
+    background: url(./img/banner5.jpg);
 }
 
 #slide .act_icon a span {
@@ -587,14 +587,14 @@ li {
 /* content2 */
 #content2 {
     position: relative;
-    background: url(/BRclone/img/bg_menu.jpg) 50% 0 no-repeat;
+    background: url(./img/bg_menu.jpg) 50% 0 no-repeat;
 }
 
 #content2 .menu {
     position: relative;
     width: 1200px;
     height: 1000px;
-    background: url(/BRclone/img/img_menu_list_211101.png) 50% 0 no-repeat;
+    background: url(./img/img_menu_list_211101.png) 50% 0 no-repeat;
     margin: 0 auto;
 }
 

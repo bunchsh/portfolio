@@ -215,7 +215,7 @@ li {
 }
 
 #header .cata .menubar .menu .sub {
-    visibility: visible;
+    visibility: hidden;
     position: absolute;
     width: 100%;
     top: 90px;

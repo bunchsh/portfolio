@@ -1,0 +1,271 @@
+/**
+ * @filename    : style.css
+ * @author      : 한송희 (onee.ssong@gmail.com)
+ * @description : Naver 회원가입 페이지의 스타일 적용 코드 모음
+ */
+
+@charset "UTF-8";
+
+/** ALL */
+html {
+    background-color: #F5F6F7;
+}
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.group {
+    overflow: hidden;
+    width: 100%;
+}
+
+.join_title {
+    margin: 19px 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#container {
+    min-width: 220px;
+    margin: 0 15px;
+}
+
+#content {
+    max-width: 460px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.select {
+    width: 100%;
+    height: 29px;
+    color: black;
+    border: none;
+    border-radius: 0;
+}
+
+.select:focus {
+    outline: none;
+}
+
+.codeno {
+    width: 100%;
+    height: 29px;
+    border: none;
+    border-radius: 0;
+}
+
+.input {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 51px;
+    border: 1px solid #dadada;
+    background: white;
+
+    padding: 10px 14px;
+    box-sizing: border-box;
+}
+
+.input_s {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 51px;
+    border: 1px solid #dadada;
+    background: white;
+
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+}
+
+.int {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 29px;
+    border: none;
+}
+
+.int:focus {
+    outline: none;
+}
+
+/** wrap */
+#wrap {
+    min-width: 250px;
+    width: 100%;
+    display: block;
+}
+
+
+/** HEADER */
+#header {
+    min-width: 220px;
+    margin: 0 15px;
+    display: block;
+
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0 40px;
+}
+
+/** 로고 */
+#header .logo {
+    width: 250px;
+    height: 32px;
+    background-size: 165px auto;
+
+    display: block;
+    margin: 0 auto;
+}
+
+#header .logo img {
+    width: 100%;
+    height: 45px;
+}
+
+/** 아이디 */
+.id_input {
+    background: white;
+
+}
+
+.com {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    font-size: 15px;
+    color: #8e8e8e;
+}
+
+/** 생년월일 */
+.bir_yy {
+    display: table-cell;
+    width: 147px;
+    vertical-align: middle;
+}
+
+.bir_mm {
+    display: table-cell;
+    width: 147px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.bir_dd {
+    display: table-cell;
+    width: 147px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+
+/** 본인확인 이메일 */
+.op {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8e8e8e;
+}
+
+
+/** 휴대전화 */
+.phone_input {
+    padding-bottom: 10px;
+}
+
+
+/** 전화번호 입력 */
+.input_m {
+    display: inline-block;
+    width: 330px;
+    padding: 10px 15px;
+    vertical-align: top;
+}
+
+
+/** 인증번호 받기 */
+.btn_input {
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 115px;
+    text-align: center;
+
+    padding: 14px 3px;
+    font-size: 18px;
+    text-align: center;
+
+    color: white;
+    font-size: 15px;
+    border: 1px solid rgba(0,0,0,.08);
+    background-color: #03c75a;
+}
+
+/** 인증번호 입력 */
+#inputCode {
+    background-color: #F5F6F7;
+}
+
+.input_code {
+    background-color: #F5F6F7;
+}
+
+/** 제출 버튼 */
+.join_btn {
+    padding-top: 20px;
+}
+
+#btnJoin {
+    display: block;
+    width: 100%;
+    padding: 15px 0 15px 0;
+    font-size: 18px;
+    text-align: center;
+
+    color: white;
+    border: 1px solid rgba(0,0,0,.08);
+    background-color: #03c75a;
+}
+
+
+/** FOOTER */
+#footer {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#footer * {
+    text-align: center;
+    list-style: none;
+
+    font-size: 12px;
+    color: #333;
+}
+
+#footer ul {
+    padding: 0;
+}
+
+#footer li {
+    display: inline;
+    position: relative;
+    
+}
+
+#footer address {
+    font-style: normal;
+}
+
+#footer .u_cra {
+    font-weight: 700;
+}
+
+#footer .u_cra:hover {
+    color: #03c75a;
+    text-decoration: underline;
+}

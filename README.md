@@ -1,5 +1,5 @@
 # portfolio
-## Songhee's Portfolio
+### Songhee's Portfolio
 
 Starbucks: https://bunchsh.github.io/portfolio/starbucksClone/ </br>
 BaskinRobbins: https://bunchsh.github.io/portfolio/BRClone </br>
